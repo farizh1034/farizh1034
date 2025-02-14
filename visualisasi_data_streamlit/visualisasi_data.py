@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load data
-@st.cache_data
-def load_data():
-    day_df = pd.read_csv("data/day.csv")
-    hour_df = pd.read_csv("data/hour.csv")
-    return day_df, hour_df
+uploaded_file = st.file_uploader("Upload file day.csv", type=["csv"])
 
-day_df, hour_df = load_data()
+if uploaded_file is not None:
+    day_df = pd.read_csv(uploaded_file)
+    st.write("Data berhasil diupload!")
+else:
+    st.error("File day.csv tidak ditemukan! Silakan upload file.")
 
 # Data preprocessing
 day_df['dteday'] = pd.to_datetime(day_df['dteday'], errors='coerce')
