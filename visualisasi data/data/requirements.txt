@@ -1,5 +1,0 @@
-Library yang saya gunakan :
-streamlit
-pandas
-matplotlib.pyplot
-seaborn
