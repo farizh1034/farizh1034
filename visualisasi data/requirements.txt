@@ -1,0 +1,5 @@
+Library yang saya gunakan :
+streamlit → Untuk membuat dashboard interaktif.
+pandas → Untuk manipulasi dan analisis data.
+matplotlib.pyplot → Untuk visualisasi data dasar.
+seaborn → Untuk visualisasi data yang lebih kompleks dengan gaya yang lebih menarik.
